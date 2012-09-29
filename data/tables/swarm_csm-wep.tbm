@@ -1,0 +1,92 @@
+#Secondary Weapons
+
+$Name:                        		    	Warhammer CSM#Swarm_2
++Tech Title:			  					XSTR("Warhammer", -1)
++Tech Anim:                     			2_tech_warhammer
++Tech Description:
+XSTR("Deployed exclusively from capships, the CapShip missile is a huge, lockable missile that carries a powerful anti-matter warhead capable of taking out other capital ships and tactical planetary targets. Mostly found on launch batteries aboard modern warships, it is best used for long range and standoff attacks. This missile is highly effective and not easily destroyed by point defense weaponry.", -1)
+$end_multi_text
+$Model File:                  		    	tcm_warhammer.pof
+$Mass:                        		    	6
+$Velocity:                    		    	156.0
+$Fire Wait:                   		    	30.0
+$Damage:                      		    	13200
+$Blast Force:                 		    	150.0
+$Inner Radius:                			    15.0
+$Outer Radius:                			    75.0
+$Shockwave Speed:             		    	0
+$Armor Factor:                		    	1.0
+$Shield Factor:               		    	1.0
+$Subsystem Factor:            			    0.6
+$Lifetime:                    			    40.0
+$Energy Consumed:             			    0.0
+$Cargo Size:                  			    40.0
+$Homing:								    YES
+	+Type:								    ASPECT
+	+Turn Time:							    2.5
+	+Min Lock Time:						    16.0
+	+Lock Pixels/Sec:					    35
+	+Catch-up Pixels/Sec:				    120
+	+Catch-up Penalty:					    15
+$Swarm:						2
+$Free Flight Time:                          1.0
+$LaunchSnd:                  	 		    97
+$ImpactSnd:                   			    88
+$FlyBySnd:                    			    -1
+$Rearm Rate:                  			    30.0
+$Flags:                       			    ( "in tech database" "No Dumbfire" "bomb" "huge" )
+$Trail:
+      +Start Width:         			    0.5
+      +End Width:           			    2.5
+      +Start Alpha:         			    0.5
+      +End Alpha:           			    0.0
+      +Max Life:            			    2.0
+      +Bitmap:              		    	newmiss1
+$Impact Explosion:            				exp07
+$Impact Explosion Radius:     				45.0
+
+$Name:                        		    	Warhammer CSM#Swarm_4
++Tech Title:			  					XSTR("Warhammer", -1)
++Tech Anim:                     			2_tech_warhammer
++Tech Description:
+XSTR("Deployed exclusively from capships, the CapShip missile is a huge, lockable missile that carries a powerful anti-matter warhead capable of taking out other capital ships and tactical planetary targets. Mostly found on launch batteries aboard modern warships, it is best used for long range and standoff attacks. This missile is highly effective and not easily destroyed by point defense weaponry.", -1)
+$end_multi_text
+$Model File:                  		    	tcm_warhammer.pof
+$Mass:                        		    	6
+$Velocity:                    		    	156.0
+$Fire Wait:                   		    	30.0
+$Damage:                      		    	13200
+$Blast Force:                 		    	150.0
+$Inner Radius:                			    15.0
+$Outer Radius:                			    75.0
+$Shockwave Speed:             		    	0
+$Armor Factor:                		    	1.0
+$Shield Factor:               		    	1.0
+$Subsystem Factor:            			    0.6
+$Lifetime:                    			    40.0
+$Energy Consumed:             			    0.0
+$Cargo Size:                  			    40.0
+$Homing:								    YES
+	+Type:								    ASPECT
+	+Turn Time:							    2.5
+	+Min Lock Time:						    16.0
+	+Lock Pixels/Sec:					    35
+	+Catch-up Pixels/Sec:				    120
+	+Catch-up Penalty:					    15
+$Swarm:						4
+$Free Flight Time:                          1.0
+$LaunchSnd:                  	 		    97
+$ImpactSnd:                   			    88
+$FlyBySnd:                    			    -1
+$Rearm Rate:                  			    30.0
+$Flags:                       			    ( "in tech database" "No Dumbfire" "bomb" "huge" )
+$Trail:
+      +Start Width:         			    0.5
+      +End Width:           			    2.5
+      +Start Alpha:         			    0.5
+      +End Alpha:           			    0.0
+      +Max Life:            			    2.0
+      +Bitmap:              		    	newmiss1
+$Impact Explosion:            				exp07
+$Impact Explosion Radius:     				45.0
+#End

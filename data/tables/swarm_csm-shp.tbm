@@ -1,0 +1,38 @@
+#Ship Classes
+
+$Name:                          Caernaven-class
+	+nocreate ;:
+$Subsystem:                     turret07, 3.125, 0.0
+    $Default SBanks:            ( "Warhammer CSM#Swarm_2" )
+
+$Name:                          Southampton-class
+	+nocreate ;:
+$Subsystem:                     turret02, 2.0, 0.0
+    $Default SBanks:            ( "Warhammer CSM#Swarm_4" )
+
+$Name:                          Savannah-class
+	+nocreate ;:
+$Subsystem:                     Turret04, 1.11111, 0.0
+    $Default SBanks:            ( "Warhammer CSM#Swarm_4" )
+
+$Name:                          Tallahassee-class
+	+nocreate ;:
+$Subsystem:                     turret06, 1.0, 0.0
+    $Default SBanks:            ( "Warhammer CSM#Swarm_4" )
+
+$Name:                          Jutland-class
+	+nocreate ;:
+$Subsystem:                     Turret16, 0.58824, 0.0
+    $Default SBanks:            ( "Warhammer CSM#Swarm_4" )
+
+$Name:                          Confederation-class
+	+nocreate ;:
+$Subsystem:                     Turret10, 0.588235, 0.0
+    $Default SBanks:            ( "Warhammer CSM#Swarm_4" )
+$Subsystem:                     Turret11, 0.588235, 0.0
+    $Default SBanks:            ( "Warhammer CSM#Swarm_4" )
+	
+
+
+
+#End

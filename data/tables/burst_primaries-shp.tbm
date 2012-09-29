@@ -1,0 +1,6 @@
+#Ship Classes
+$Name:                          F-103A Excalibur
+	+nocreate ;:
+; $Allowed PBanks:                ( "Tachyon" "Tachyon#Excalibur" ) ( "Reaper" )
+; $Default PBanks:                ( "Tachyon#Excalibur" "Reaper" )
+#End

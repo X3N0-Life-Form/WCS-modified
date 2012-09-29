@@ -1,0 +1,129 @@
+#Primary Weapons
+$Name:								Ion
+	+nocreate ;:
+$Fire Wait: 						0.70		; 0.35
+$Flags:                                		( "player allowed" "in tech database" "no pierce shields" "cycle" )
+$Burst Shots:						2
+$Burst Delay: 						100
+$Burst Flags: 						( "fast firing" )
+
+$Name:								Laser
+	+nocreate ;:
+$Fire Wait: 						0.50		; 0.25
+$Flags:                             ( "player allowed" "in tech database" "no pierce shields" "cycle" )
+$Burst Shots:						2
+$Burst Delay: 						100
+$Burst Flags: 						( "fast firing" )
+
+
+; $Name:                                  	@Light Tachyon ; is that thing for the Bearcat?
+	; +nocreate ;:
+; $Flags:                             ( "player allowed" "in tech database" "no pierce shields" "cycle" )
+; $Burst Shots:						4
+; $Burst Delay: 						100
+; $Burst Flags: 						( "fast firing" )
+	
+$Name:                          	Mass Driver
+	+nocreate ;:
+$Fire Wait:                   		0.70		; 0.35
+$Flags:                             ( "player allowed" "in tech database" "no pierce shields" "cycle" )
+$Burst Shots:						2
+$Burst Delay: 						100
+$Burst Flags: 						( "fast firing" )
+
+
+$Name:                          	Meson
+	+nocreate ;:
+$Fire Wait:                   		0.8		; 0.4
+$Flags:                             ( "player allowed" "in tech database" "no pierce shields" "cycle" )
+$Burst Shots:						2
+$Burst Delay: 						100
+$Burst Flags: 						( "fast firing" )
+
+
+$Name:                          	Neutron
+	+nocreate ;:
+$Fire Wait:                   		0.70		; 0.35
+$Flags:                             ( "player allowed" "in tech database" "no pierce shields" "cycle" )
+$Burst Shots:						2
+$Burst Delay: 						100
+$Burst Flags: 						( "fast firing" )
+
+
+$Name:                          	Particle
+	+nocreate ;:
+$Flags:                             ( "player allowed" "in tech database" "no pierce shields" "cycle" )
+$Burst Shots:						2
+$Burst Delay: 						100
+$Burst Flags: 						( "fast firing" )
+
+
+$Name:                          	Photon
+	+nocreate ;:
+$Flags:                             ( "player allowed" "in tech database" "no pierce shields" "cycle" )
+$Burst Shots:						2
+$Burst Delay: 						100
+$Burst Flags: 						( "fast firing" )
+
+
+$Name:                          	Plasma
+	+nocreate ;:
+$Flags:                             ( "player allowed" "in tech database" "no pierce shields" "cycle" )
+$Burst Shots:						2
+$Burst Delay: 						100
+$Burst Flags: 						( "fast firing" )
+
+
+$Name:                               Reaper
+	+nocreate ;:
+$Flags:                             ( "player allowed" "in tech database" "no pierce shields" "cycle" )
+$Burst Shots:						2
+$Burst Delay: 						100
+$Burst Flags: 						( "fast firing" )
+
+
+; $Name:                              Tachyon ;;the excalibur ain't the only one carrying it
+	; +nocreate ;:
+; $Flags:                             ( "player allowed" "in tech database" "no pierce shields" "cycle" )
+; $Burst Shots:						4
+; $Burst Delay: 						100
+; $Burst Flags: 						( "fast firing" )
+
+$Name:                                  	Tachyon#Excalibur ; fires in bursts of 4
++Tech Title:				   				XSTR("Tachyon Gun", -1)
++Tech Anim:					   				2_tech_tachyon
++Tech Description:
+XSTR("A power-hungry blaster, the tachyon gun is the most devastating energy gun found on Terran fighters. It slows down tachyon particles, which naturally travel faster than the speed of light. Once these particles are decelerated and forced into streams, their potential damage increases monumentally. In several documented cases, the powerful tachyon cannon has been used to attack the shields of capital ships.", -1)
+$end_multi_text
+$Model File:								none
+@Laser Bitmap:								tachyon
+@Laser Glow:								tachyon_glow
+@Laser Color:								197, 208, 229
+@Laser Color2:								0, 0, 0
+@Laser Length:								14.0
+@Laser Head Radius:							0.75
+@Laser Tail Radius:							0.65
+$Mass:                                 		0.3
+$Velocity:                             		720.0
+$Fire Wait:                            		0.35	
+$Damage:                               		70.0
+$Armor Factor:								1.0
+$Shield Factor:								0.9
+$Subsystem Factor:							0.35
+$Lifetime:                            		0.89
+$Energy Consumed:							4.0
+$Cargo Size:								0.0	
+$Homing:                               		NO
+$LaunchSnd:                            		82
+$ImpactSnd:                            		85 
++Weapon Range:								640
+$Flags:                                		( "player allowed" "in tech database" "no pierce shields" "cycle" )
+$Icon:                       				IconTachyon
+$Anim:                        				LoadoutTachyon
+$Impact Explosion:							MS_Impact
+$Impact Explosion Radius:					1.2
+$Burst Shots:						4
+$Burst Delay: 						100
+$Burst Flags: 						( "fast firing" )
+
+#End
