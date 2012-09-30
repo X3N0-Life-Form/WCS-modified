@@ -52,6 +52,7 @@ $Burst Flags: 						( "fast firing" )
 
 $Name:                          	Particle
 	+nocreate ;:
+$Fire Wait:                   		0.80		; 0.4
 $Flags:                             ( "player allowed" "in tech database" "no pierce shields" "cycle" )
 $Burst Shots:						2
 $Burst Delay: 						100
@@ -60,6 +61,7 @@ $Burst Flags: 						( "fast firing" )
 
 $Name:                          	Photon
 	+nocreate ;:
+$Fire Wait:                   		0.90		; 0.45
 $Flags:                             ( "player allowed" "in tech database" "no pierce shields" "cycle" )
 $Burst Shots:						2
 $Burst Delay: 						100
@@ -68,6 +70,7 @@ $Burst Flags: 						( "fast firing" )
 
 $Name:                          	Plasma
 	+nocreate ;:
+$Fire Wait:                   		1.0		; 0.5
 $Flags:                             ( "player allowed" "in tech database" "no pierce shields" "cycle" )
 $Burst Shots:						2
 $Burst Delay: 						100
@@ -76,6 +79,7 @@ $Burst Flags: 						( "fast firing" )
 
 $Name:                               Reaper
 	+nocreate ;:
+$Fire Wait: 						0.60		; 0.30
 $Flags:                             ( "player allowed" "in tech database" "no pierce shields" "cycle" )
 $Burst Shots:						2
 $Burst Delay: 						100
@@ -105,7 +109,7 @@ $Model File:								none
 @Laser Tail Radius:							0.65
 $Mass:                                 		0.3
 $Velocity:                             		720.0
-$Fire Wait:                            		0.35	
+$Fire Wait:                            		1.40	; 0.35	
 $Damage:                               		70.0
 $Armor Factor:								1.0
 $Shield Factor:								0.9
