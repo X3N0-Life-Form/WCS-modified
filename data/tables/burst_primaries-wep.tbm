@@ -86,8 +86,9 @@ $Burst Delay: 						100
 $Burst Flags: 						( "fast firing" )
 
 
-; $Name:                              Tachyon ;;the excalibur ain't the only one carrying it
+; $Name:                              Tachyon ;; the excalibur ain't the only one carrying it
 	; +nocreate ;:
+; $Fire Wait:                            		1.40	; 0.35	
 ; $Flags:                             ( "player allowed" "in tech database" "no pierce shields" "cycle" )
 ; $Burst Shots:						4
 ; $Burst Delay: 						100
