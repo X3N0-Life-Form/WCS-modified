@@ -1,0 +1,260 @@
+#Ship Classes
+
+;------------------------------ Venture -------------------------------------
+
+$Name:                          Venture-class
+	+nocreate ;:
+$Flags:                         ( "capital" "in tech database" "player_ship" "no pain flash" )
+
+		
+;------------------------------ Caernaven -------------------------------------
+
+$Name:                          Caernaven-class
+	+nocreate ;:
+$Flags:                         ( "capital" "in tech database" "player_ship" "no pain flash" )
+
+; $Subsystem:                     turret05, 2.34375, 0.0
+    ; $Alt Subsystem Name:        Miss. Turret
+    ; $Default SBanks:            ( "Spiculum IR#turretSP" )
+    ; $Flags:                     ( "carry no damage" "fire down normals" "check hull" "no subsystem targeting" "reset when idle" )
+    
+; $Subsystem:                     turret06, 2.34375, 0.0
+    ; $Alt Subsystem Name:        Miss. Turret
+    ; $Default SBanks:            ( "Spiculum IR#turretSP" )
+    ; $Flags:                     ( "carry no damage" "fire down normals" "check hull" "no subsystem targeting" "reset when idle" )
+
+;------------------------------ Southampton -----------------------------------
+
+$Name:                          Southampton-class
+	+nocreate ;:
+$Flags:                         ( "capital" "in tech database" "player_ship" "no pain flash" )
+
+
+;------------------------------ Savannah --------------------------------------
+
+$Name:                          Savannah-class
+	+nocreate ;:
+$Flags:                         ( "capital" "in tech database" "player_ship" "no pain flash" )
+
+; $Subsystem:                     Turret05, 0.83333, 3.0
+    ; $Alt Subsystem Name:        Miss. Turret
+    ; $Default SBanks:            ( "Spiculum IR#turretMP" )
+    ; $Flags:                     ( "carry no damage" "fire down normals" "check hull" "no subsystem targeting" "fire on target" "reset when idle" )
+    ; $animation:                 triggered
+    ; $type:                      initial
+        ; +relative_angle:        90, 180, 0
+
+; $Subsystem:                     Turret06, 0.83333, 5.0
+    ; $Alt Subsystem Name:        Miss. Turret
+    ; $Default SBanks:            ( "Spiculum IR#turretMP" )
+    ; $Flags:                     ( "carry no damage" "fire down normals" "check hull" "no subsystem targeting" "fire on target" "reset when idle" )
+    ; $animation:                 triggered
+    ; $type:                      initial
+        ; +relative_angle:        90, 180, 0
+
+
+
+;------------------------------ Tallahassee -----------------------------------
+
+$Name:                          Tallahassee-class
+	+nocreate ;:
+$Flags:                         ( "capital" "in tech database" "player_ship" )
+
+;------------------------------ Harrier --------------------------------------
+
+$Name:                          Harrier-class
+	+nocreate ;:
+$Flags:                         ( "capital" "player_ship" )
+
+
+;------------------------------ Yorktown --------------------------------------
+
+$Name:                          Yorktown-class
+	+nocreate ;:
+$Flags:                         ( "capital" "in tech database" "player_ship" )
+
+
+
+;------------------------------ Jutland ---------------------------------------
+
+$Name:                          Jutland-class
+	+nocreate ;:
+$Flags:                         ( "capital" "player_ship" )
+
+; $Subsystem:                     Turret03, 0.44118, 5.0
+    ; $Alt Subsystem Name:        Miss. Turret
+    ; $Default SBanks:            ( "Spiculum IR#turretMP" )
+    ; $Flags:                     ( "carry no damage" "fire down normals" "check hull" "no subsystem targeting" "fire on target" "reset when idle" )
+    ; $animation:                 triggered
+    ; $type:                      initial
+        ; +relative_angle:        90, 0, 0
+
+; $Subsystem:                     Turret04, 0.44118, 5.0
+    ; $Alt Subsystem Name:        Miss. Turret
+    ; $Default SBanks:            ( "Spiculum IR#turretMP" )
+    ; $Flags:                     ( "carry no damage" "fire down normals" "check hull" "no subsystem targeting" "fire on target" "reset when idle" )
+    ; $animation:                 triggered
+    ; $type:                      initial
+        ; +relative_angle:        90, 180, 0
+
+
+
+;------------------------------ Lexington -------------------------------------
+
+$Name:                          Lexington-class
+	+nocreate ;:
+$Flags:                         ( "capital" "player_ship" )
+    
+; $Subsystem:                     turret01, 0.394737, 5.0
+    ; $Alt Subsystem Name:        Miss. Turret
+    ; $Default SBanks:            ( "Spiculum IR#turretMP" )
+    ; $Flags:                     ( "carry no damage" "fire down normals" "check hull" "no subsystem targeting" "fire on target" "reset when idle" )
+    ; $animation:                 triggered
+    ; $type:                      initial
+        ; +relative_angle:        90, 0, 0
+
+; $Subsystem:                     turret02, 0.394737, 5.0
+    ; $Alt Subsystem Name:        Miss. Turret
+    ; $Default SBanks:            ( "Spiculum IR#turretMP" )
+    ; $Flags:                     ( "carry no damage" "fire down normals" "check hull" "no subsystem targeting" "fire on target" "reset when idle" )
+    ; $animation:                 triggered
+    ; $type:                      initial
+        ; +relative_angle:        90, 0, 0
+
+; $Subsystem:                     turret03, 0.394737, 5.0
+    ; $Alt Subsystem Name:        Miss. Turret
+    ; $Default SBanks:            ( "Spiculum IR#turretMP" )
+    ; $Flags:                     ( "carry no damage" "fire down normals" "check hull" "no subsystem targeting" "fire on target" "reset when idle" )
+    ; $animation:                 triggered
+    ; $type:                      initial
+        ; +relative_angle:        90, 180, 0
+
+
+
+;------------------------------ Confederation ---------------------------------
+
+$Name:                          Confederation-class
+	+nocreate ;:
+$Flags:                         ( "capital" "player_ship" )
+
+; $Subsystem:                     Turret24, 0.441177, 5.0
+    ; $Alt Subsystem Name:        Miss. Turret
+    ; $Default SBanks:            ( "Spiculum IR#turretMP" )
+    ; $Flags:                     ( "carry no damage" "fire down normals" "check hull" "no subsystem targeting" "fire on target" "reset when idle" )
+    ; $animation:                 triggered
+    ; $type:                      initial
+        ; +relative_angle:        45, 0, 0
+
+; $Subsystem:                     Turret25, 0.441177, 5.0
+    ; $Alt Subsystem Name:        Miss. Turret
+    ; $Default SBanks:            ( "Spiculum IR#turretMP" )
+    ; $Flags:                     ( "carry no damage" "fire down normals" "check hull" "no subsystem targeting" "fire on target" "reset when idle" )
+    ; $animation:                 triggered
+    ; $type:                      initial
+        ; +relative_angle:        45, 0, 0
+
+
+;------------------------------ Kamrani ---------------------------------------
+
+$Name:                          Kamrani-class
+	+nocreate ;:
+$Flags:                         ( "capital" "in tech database" "player_ship" )
+; $Subsystem:                     turret05, 5.35714, 5.0
+    ; $Alt Subsystem Name:        Med. Turret
+    ; $Default PBanks:            ( "Tachyon Turret" )
+    ; $Flags:                     ( "carry no damage" "check hull" "fire on target" "reset when idle" )
+    ; $animation:                 triggered
+    ; $type:                      initial
+        ; +relative_angle:        90, 180, 0
+
+; $Subsystem:                     turret06, 7.14286, 0.0
+    ; $Alt Subsystem Name:        Launcher
+    ; $Default SBanks:            ( "Predator" )
+    ; $Flags:                     ( "carry no damage" "fire down normals" "no subsystem targeting" "check hull" "reset when idle" )
+
+
+
+;------------------------------ Zakhari ---------------------------------------
+
+$Name:                          Zakhari-class
+	+nocreate ;:
+$Flags:                         ( "capital" "player_ship" )
+; $Subsystem:                     turret05, 2.88462, 5.0
+    ; $Alt Subsystem Name:        Miss. Turret
+    ; $Default SBanks:            ( "Claw#turret" )
+    ; $Flags:                     ( "carry no damage" "fire down normals" "check hull" "no subsystem targeting" "reset when idle" )
+
+; $Subsystem:                     turret06, 2.88462, 5.0
+    ; $Alt Subsystem Name:        Miss. Turret
+    ; $Default SBanks:            ( "Claw#turret" )
+    ; $Flags:                     ( "carry no damage" "fire down normals" "check hull" "no subsystem targeting" "reset when idle" )
+
+
+;------------------------------ Jammer ---------------------------------------
+
+$Name:                          Zakhari-class#Jammer
+	+nocreate ;:
+$Flags:                         ( "capital" "player_ship" )
+; $Subsystem:                     turret05, 2.88462, 5.0
+    ; $Alt Subsystem Name:        Miss. Turret
+    ; $Default SBanks:            ( "Claw#turret" )
+    ; $Flags:                     ( "carry no damage" "fire down normals" "check hull" "no subsystem targeting" "reset when idle" )
+
+; $Subsystem:                     turret06, 2.88462, 5.0
+    ; $Alt Subsystem Name:        Miss. Turret
+    ; $Default SBanks:            ( "Claw#turret" )
+    ; $Flags:                     ( "carry no damage" "fire down normals" "check hull" "no subsystem targeting" "reset when idle" )
+
+
+;------------------------------ Ralarrad --------------------------------------
+
+$Name:                          Ralarrad-class
+	+nocreate ;:
+$Flags:                         ( "capital" "in tech database" "player_ship" )
+
+;------------------------------ Ralaxath --------------------------------------
+
+$Name:                          Ralaxath-class
+	+nocreate ;:
+$Flags:                         ( "capital" "player_ship" )
+$AI Class:                      Captain
+
+
+;------------------------------ Fralath ---------------------------------------
+
+$Name:                          Fralath-class
+	+nocreate ;:
+$Flags:                         ( "capital"  "in tech database" "player_ship" )
+
+
+
+;------------------------------ Fralthi II ------------------------------------
+
+$Name:                          Fralthi II-class
+	+nocreate ;:
+$Flags:                         ( "capital" "in tech database" "player_ship" )
+
+
+;------------------------------ Dubav -----------------------------------------
+
+$Name:                          Dubav-class
+	+nocreate ;:
+$Flags:                         ( "capital" "player_ship" )
+
+
+;------------------------------ Bhantkara -------------------------------------
+
+$Name:                          Bhantkara-class
+	+nocreate ;:
+$Flags:                         ( "capital" "in tech database" "player_ship" )
+
+
+;------------------------------ Hvar'kann ----------------------------------------
+	
+	
+$Name:                          Hvar'kann-class
+	+nocreate ;:
+$Flags:                         ( "capital" "player_ship" )
+
+
+#End
