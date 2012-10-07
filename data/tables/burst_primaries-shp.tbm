@@ -1,6 +1,150 @@
 #Ship Classes
+;; ================================== Confed stuff
+$Name:                          F-66A Thunderbolt VII
+	+nocreate ;:
+$Subsystem:                     turret01, 5.0, 2.0
+    $Alt Subsystem Name:        Turret
+    $Alt Damage Popup Subsystem Name: Turret
+    $Default PBanks:            ( "Mass Driver#Turret" )
+    $Flags:                     ( "carry no damage" "check hull" "no subsystem targeting" "fire on target" "reset when idle" )
+
+
+$Name:                          F-57B Sabre
+	+nocreate ;:
+$Subsystem:                     turret01, 5.0, 2.0
+    $Alt Subsystem Name:        Turret
+    $Alt Damage Popup Subsystem Name: Turret
+    $Default PBanks:            ( "Neutron#Turret" "Neutron#Turret" )
+    $Flags:                     ( "carry no damage" "check hull" "no subsystem targeting" "fire on target" "reset when idle" )
+	
+
 $Name:                          F-103A Excalibur
 	+nocreate ;:
-; $Allowed PBanks:                ( "Tachyon" "Tachyon#Excalibur" ) ( "Reaper" )
-; $Default PBanks:                ( "Tachyon#Excalibur" "Reaper" )
+$Allowed PBanks:                ( "Tachyon" "Tachyon#Quad" ) ( "Reaper" )
+$Default PBanks:                ( "Tachyon#Quad" "Reaper" )
+
+$Name:                          F/A-76A Longbow
+	+nocreate ;:
+$Subsystem:                     turret01, 5.0, 2.0
+    $Alt Subsystem Name:        Turret
+    $Alt Damage Popup Subsystem Name: Turret
+    $Default PBanks:            ( "Particle#Turret" )
+    $Flags:                     ( "carry no damage" "check hull" "no subsystem targeting" "fire on target" "reset when idle" )
+
+;; ================================== Kilrathi stuff
+
+
+$Name:                          Ekapshi
+	+nocreate ;:
+$Default PBanks:                ( "Laser" "Meson#Quad" )
+
+
+$Name:                          Dralthi IV
+	+nocreate ;:
+$Default PBanks:                ( "Meson" "Particle#Turret" ) ;; turret=original weapon
+
+$Name:                          Dralthi IV#Ace
+	+nocreate ;:
+$Default PBanks:                ( "Plasma" "Tachyon#Turret")
+
+
+$Name:                          Vaktoth
+	+nocreate ;:
+$Default PBanks:                ( "Particle" "Plasma" "Tachyon#Turret" )
+$Subsystem:                     turret01, 5.0, 2.0
+    $Alt Subsystem Name:        Turret
+    $Default PBanks:            ( "Meson#Turret" )
+    $Flags:                     ( "carry no damage" "check hull" "no subsystem targeting" "fire on target" "reset when idle" )
+
+$Name:                          Vaktoth#Ace
+	+nocreate ;:
+$Default PBanks:                ( "Particle" "Plasma" "Tachyon#Turret" )
+$Subsystem:                     turret01, 5.0, 2.0
+    $Alt Subsystem Name:        Turret
+    $Default PBanks:            ( "Meson#Turret" )
+    $Flags:                     ( "carry no damage" "check hull" "no subsystem targeting" "fire on target" "reset when idle" )
+	
+
+$Name:                          Vaktoth#AceCloak
+	+nocreate ;:
+$Default PBanks:                ( "Particle" "Plasma" "Tachyon#Turret" )
+$Subsystem:                     turret01, 5.0, 2.0
+    $Alt Subsystem Name:        Turret
+    $Default PBanks:            ( "Meson#Turret" )
+    $Flags:                     ( "carry no damage" "check hull" "no subsystem targeting" "fire on target" "reset when idle" )
+	
+	
+$Name:                          Vaktoth#AceDecloak
+	+nocreate ;:
+$Default PBanks:                ( "Particle" "Plasma" "Tachyon#Turret" )
+$Subsystem:                     turret01, 5.0, 2.0
+    $Alt Subsystem Name:        Turret
+    $Default PBanks:            ( "Meson#Turret" )
+    $Flags:                     ( "carry no damage" "check hull" "no subsystem targeting" "fire on target" "reset when idle" )
+	
+	
+$Name:                          Vaktoth#AceInv
+	+nocreate ;:
+$Default PBanks:                ( "Particle" "Plasma" "Tachyon#Turret" )
+$Subsystem:                     turret01, 5.0, 2.0
+    $Alt Subsystem Name:        Turret
+    $Default PBanks:            ( "Meson#Turret" )
+    $Flags:                     ( "carry no damage" "check hull" "no subsystem targeting" "fire on target" "reset when idle" )
+	
+
+$Name:                          Khahaf
+	+nocreate ;:
+$Default PBanks:                ( "Reaper#Quad" "Meson" )
+
+
+$Name:                          Gothri
+	+nocreate ;:
+$Subsystem:                     turret01a, 5.0, 2.0
+    $Alt Subsystem Name:        Turret
+    $Default PBanks:            ( "Laser#Turret" )
+    $Flags:                     ( "carry no damage" "check hull" "no subsystem targeting" "fire on target" "reset when idle" )
+	
+
+$Name:                          Gothri#B
+	+nocreate ;:
+$Subsystem:                     turret01a, 5.0, 2.0
+    $Alt Subsystem Name:        Turret
+    $Default PBanks:            ( "Laser#Turret" )
+    $Flags:                     ( "carry no damage" "check hull" "no subsystem targeting" "fire on target" "reset when idle" )
+
+
+$Name:                          Paktahn
+	+nocreate ;:
+$Default PBanks:                ( "Plasma#Quad" "Ion" )
+$Subsystem:                     turret01, 5.0, 2.0
+    $Alt Subsystem Name:        Turret
+    $Default PBanks:            ( "Mass Driver#Turret" )
+    $Flags:                     ( "carry no damage" "check hull" "no subsystem targeting" "fire on target" "reset when idle" )
+
+
+$Name:                          Paktahn#Ace
+	+nocreate ;:
+$Default PBanks:                ( "Plasma#Quad" "Laser#Quad" )
+$Subsystem:                     turret01, 5.0, 2.0
+    $Alt Subsystem Name:        Turret
+    $Default PBanks:            ( "Mass Driver#Turret" )
+    $Flags:                     ( "carry no damage" "check hull" "no subsystem targeting" "fire on target" "reset when idle" )
+
+
+$Name:                          Sorthak
+	+nocreate ;:
+$Default PBanks:                ( "Plasma" "Reaper#Quad" )
+$Subsystem:                     turret01, 5.0, 2.0
+    $Alt Subsystem Name:        Turret
+    $Default PBanks:            ( "Meson#Turret" "Meson#Turret" )
+    $Flags:                     ( "carry no damage" "check hull" "no subsystem targeting" "fire on target" "reset when idle" )
+$Subsystem:                     turret02, 5.0, 2.0
+    $Alt Subsystem Name:        Turret
+    $Default PBanks:            ( "Meson#Turret" "Meson#Turret" )
+    $Flags:                     ( "carry no damage" "check hull" "no subsystem targeting" "fire on target" "reset when idle" )
+$Subsystem:                     turret03, 5.0, 2.0
+    $Alt Subsystem Name:        Turret
+    $Default PBanks:            ( "Meson#Turret" "Meson#Turret" )
+    $Flags:                     ( "carry no damage" "check hull" "no subsystem targeting" "fire on target" "reset when idle" )
+
 #End

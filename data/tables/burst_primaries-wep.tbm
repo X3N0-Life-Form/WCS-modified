@@ -1,8 +1,10 @@
 #Primary Weapons
+
+;; burst variants
 $Name:								Ion
 	+nocreate ;:
 $Fire Wait: 						0.70		; 0.35
-$Flags:                                		( "player allowed" "in tech database" "no pierce shields" "cycle" )
+$Flags:                             ( "player allowed" "in tech database" "no pierce shields" "cycle" )
 $Burst Shots:						2
 $Burst Delay: 						100
 $Burst Flags: 						( "fast firing" )
@@ -86,20 +88,17 @@ $Burst Delay: 						100
 $Burst Flags: 						( "fast firing" )
 
 
-; $Name:                              Tachyon ;; the excalibur ain't the only one carrying it
-	; +nocreate ;:
-; $Fire Wait:                            		1.40	; 0.35	
-; $Flags:                             ( "player allowed" "in tech database" "no pierce shields" "cycle" )
-; $Burst Shots:						4
-; $Burst Delay: 						100
-; $Burst Flags: 						( "fast firing" )
+$Name:                              Tachyon ;; the excalibur ain't the only one carrying it
+	+nocreate ;:
+$Fire Wait:                            		0.70	; 0.35	
+$Flags:                             ( "player allowed" "in tech database" "no pierce shields" "cycle" )
+$Burst Shots:						2
+$Burst Delay: 						100
+$Burst Flags: 						( "fast firing" )
 
-$Name:                                  	Tachyon#Excalibur ; fires in bursts of 4
-+Tech Title:				   				XSTR("Tachyon Gun", -1)
-+Tech Anim:					   				2_tech_tachyon
-+Tech Description:
-XSTR("A power-hungry blaster, the tachyon gun is the most devastating energy gun found on Terran fighters. It slows down tachyon particles, which naturally travel faster than the speed of light. Once these particles are decelerated and forced into streams, their potential damage increases monumentally. In several documented cases, the powerful tachyon cannon has been used to attack the shields of capital ships.", -1)
-$end_multi_text
+;; firepoint specific variants
+
+$Name:                                  	Tachyon#Quad ; fires in bursts of 4
 $Model File:								none
 @Laser Bitmap:								tachyon
 @Laser Glow:								tachyon_glow
@@ -122,7 +121,7 @@ $Homing:                               		NO
 $LaunchSnd:                            		82
 $ImpactSnd:                            		85 
 +Weapon Range:								640
-$Flags:                                		( "player allowed" "in tech database" "no pierce shields" "cycle" )
+$Flags:                                		( "player allowed" "no pierce shields" "cycle" )
 $Icon:                       				IconTachyon
 $Anim:                        				LoadoutTachyon
 $Impact Explosion:							MS_Impact
@@ -130,5 +129,343 @@ $Impact Explosion Radius:					1.2
 $Burst Shots:						4
 $Burst Delay: 						100
 $Burst Flags: 						( "fast firing" )
+
+$Name:                          			@Meson#Quad
+$Model File:                  				none
+@Laser Bitmap:								meson
+@Laser Glow:								meson_glow
+@Laser Color:								70, 229, 7
+@Laser Color2:								0, 0, 0
+@Laser Length:								13.0	
+@Laser Head Radius:							0.9
+@Laser Tail Radius:							0.9
+$Mass:										0.2
+$Velocity:                    				765
+$Fire Wait:                   				1.60 ; 0.4
+$Damage:                      				35
+$Armor Factor:								1.3
+$Shield Factor:								0.75
+$Subsystem Factor:							0.3
+$Lifetime:                    				1.18
+$Energy Consumed:             				2.2                     ;was 1.6
+$Cargo Size:                  				0.0
+$Homing:                      				NO
+$LaunchSnd:                   				81
+$ImpactSnd:                   				85
++Weapon Range:                				900  
+$Flags:                       				( "player allowed" "stream" "particle spew" "no pierce shields" "cycle" )
+$Icon:                        				IconMeson
+$Anim:                        				LoadoutMeson
+$Impact Explosion:              			Maxim_Impact
+$Impact Explosion Radius:					3.3
+$Pspew: 
++Count: 	                                1 
++Time: 		                                17
++Vel: 		                                0.40 
++Radius: 	                                0.40 
++Life: 		                                0.2 
++Scale: 	                                0.65 
++Bitmap: 	                                Vepar_Particle
+$Burst Shots:						4
+$Burst Delay: 						100
+$Burst Flags: 						( "fast firing" )
+
+$Name:                                  	@Reaper#Quad
+$Model File:								none
+@Laser Bitmap:			                    Reaper_Bitmap
+@Laser Glow:			                    Reaper_Glow
+@Laser Color:			                    223, 30, 229
+@Laser Color2:			                    0, 0, 0
+@Laser Length:			                    13.0
+@Laser Head Radius: 	                    0.7
+@Laser Tail Radius: 	                    0.7
+$Mass:										0.3
+$Velocity:									880.0
+$Fire Wait: 								1.20 ; 0.30
+$Damage:									35
+$Armor Factor:                				1.3
+$Shield Factor:               				0.7
+$Subsystem Factor:            				1.0
+$Lifetime:									1.03
+$Energy Consumed:							1.2 ;was 1.7
+$Cargo Size:								0.0
+$Homing:									NO
+$LaunchSnd: 								78	
+$ImpactSnd: 								85	
++Weapon Range:								900	
+$Flags: 									( "player allowed" "stream" "no pierce shields" "cycle" )
+$Icon:                        				IconReaper
+$Anim:                        				LoadoutReaper
+$Impact Explosion:							Shivan_Impact02
+$Impact Explosion Radius:					1.5
+$Burst Shots:						4
+$Burst Delay: 						100
+$Burst Flags: 						( "fast firing" )
+
+$Name:                                  	@Laser#Quad
+$Model File:								none
+@Laser Bitmap:			                    Laser_Bitmap
+@Laser Glow:			                    Laser_Glow
+@Laser Color:			                    229, 31, 28
+@Laser Color2:								0, 0, 0
+@Laser Length:			                    12.0
+@Laser Head Radius: 	                    0.7
+@Laser Tail Radius: 	                    0.7
+$Mass:										0.3
+$Velocity:									900.0			
+$Fire Wait: 								1.0 ; 0.25				
+$Damage:									18
+$Armor Factor:								1.0
+$Shield Factor: 							1.0
+$Subsystem Factor:							0.3
+$Lifetime:									1.11				
+$Energy Consumed:							0.6825                  ;was then 0.625		
+$Cargo Size:								0.0 			
+$Homing:									NO
+$LaunchSnd: 								76				
+$ImpactSnd: 								85				
++Weapon Range:								1000			
+$Flags: 									( "player allowed" "stream" "no pierce shields" "cycle" )
+$Icon:										IconLaser
+$Anim:										LoadoutLaser
+$Burst Shots:						4
+$Burst Delay: 						100
+$Burst Flags: 						( "fast firing" )
+
+$Name:                          			@Plasma#Quad
+$Model File:                    			none
+@Laser Bitmap:								Plasma_Bitmap
+@Laser Glow:								Laser_Glow
+@Laser Color:								41, 229, 189
+@Laser Color2:								0, 0, 0
+@Laser Length:								15.0
+@Laser Head Radius:							1.5
+@Laser Tail Radius:							1.0
+$Mass:                        				1.0
+$Velocity:                    				540
+$Fire Wait:                   				2.0 ; 0.5
+$Damage:                      				67
+$Armor Factor:								1.0
+$Shield Factor:								1.0
+$Subsystem Factor:							1.0
+$Lifetime:                    				0.9
+$Energy Consumed:             				4.4
+$Cargo Size:                  				0.0
+$Homing:                      				NO
+$LaunchSnd:                   				77
+$ImpactSnd:                   				85
++Weapon Range:                				600
+$Flags:                       				( "player allowed" "particle spew" "no pierce shields" "cycle" )
+$Icon:                        				IconPlasma
+$Anim:                       				LoadoutPlasma
+$Impact Explosion:							Akheton_Impact
+$Impact Explosion Radius:					3
+$Pspew: 
++Count: 	                                1 
++Time: 		                                17
++Vel: 		                                0.40 
++Radius: 	                                0.45 
++Life: 		                                0.2 
++Scale: 	                                0.65 
++Bitmap: 	                                Kayser_Particle
+$Burst Shots:						4
+$Burst Delay: 						100
+$Burst Flags: 						( "fast firing" )
+
+;; ======================================== turret variants - identical to the original weapon
+$Name:                          			@Mass Driver#Turret
+$Model File:                  				none
+@Laser Bitmap:                				Massd
+@Laser Glow:                  				none
+@Laser Color:                 				0, 0, 0
+@Laser Color2:                				0, 0, 0
+@Laser Length:               				1.0
+@Laser Head Radius:           				0.9
+@Laser Tail Radius:           				0.8
+$Mass:                        				0.6
+$Velocity:                    				720
+$Fire Wait:                   				0.35
+$Damage:                      				45
+$Armor Factor:				  				1.0
+$Shield Factor:				  				1.0
+$Subsystem Factor:			  				0.2
+$Lifetime:                    				0.56
+$Energy Consumed:             				1.2
+$Cargo Size:                  				0.0
+$Homing:                      				NO
+$LaunchSnd:                   				79
+$ImpactSnd:                   				85
++Weapon Range:                				400
+$Flags:                       				( "player allowed" "no pierce shields" )
+$Icon:                        				IconMass
+$Anim:                        				LoadoutMassDriver
+$Impact Explosion:            				Vapula_Impact
+$Impact Explosion Radius:	  				2.0
+
+$Name:                          			@Neutron#Turret
+$Model File:                  				none
+@Laser Bitmap:			                    Neutron_Bitmap
+@Laser Glow:			                    Neutron_Glow
+@Laser Color:			                    229, 107, 25
+@Laser Color2:			                    0, 0, 0
+@Laser Length:       	                    5.0
+@Laser Head Radius:		                    0.95
+@Laser Tail Radius:		                    0.90
+$Mass:										0.2
+$Velocity:                   				675 
+$Fire Wait:                   				0.35
+$Damage:                      				30.0
+$Armor Factor:								1.1
+$Shield Factor:								1.0
+$Subsystem Factor:							0.3
+$Lifetime:                    				1.5
+$Energy Consumed:             				1.25                    ;was 2.0
+$Cargo Size:                  				0.0
+$Homing:                      				NO
+$LaunchSnd:                   				84
+$ImpactSnd:                   				85
++Weapon Range:                				800
+$Flags:                       				( "player allowed" "stream" "particle spew" "no pierce shields" )
+$Trail:																									
+	+Start Width:            			    1.0                                      
+	+End Width: 	           			    0.7                                     
+	+Start Alpha:						    1.2
+	+End Alpha:							    0.0
+	+Max Life:							    0.1                                    
+	+Bitmap:								neutrontrail2
+$Icon:                                 		IconNeutron
+$Anim:                                 		LoadoutNeutron
+$Impact Explosion:							Circe_Impact
+$Impact Explosion Radius:					2.2
+$Pspew: 
++Count: 			                        1 
++Time: 				                        17
++Vel: 				                        0.40 
++Radius: 			                        0.40 
++Life: 				                        0.2 
++Scale: 			                        0.65 
++Bitmap: 			                        Vapula_Particle
+
+$Name:                          			@Particle#Turret
+$Model File:                  				none
+@Laser Bitmap:                              Particle_Bitmap
+@Laser Glow:                                Particle_Glow
+@Laser Color:                               229, 168, 0
+@Laser Color2:                              0, 0, 0
+@Laser Length:			                    5.0
+@Laser Head Radius:		                    2.0
+@Laser Tail Radius:		                    2.0
+$Mass:                        				0.4
+$Velocity:                    				945
+$Fire Wait:                   				0.4
+$Damage:                      				43
+$Armor Factor:								1.0
+$Shield Factor:								1.0
+$Subsystem Factor:							0.35
+$Lifetime:                    				0.89
+$Energy Consumed:             				2.2
+$Cargo Size:                  				0.0
+$Homing:                      				NO
+$LaunchSnd:                   				83
+$ImpactSnd:                   				85
++Weapon Range:                				840
+$Flags:                       				( "player allowed" "stream" "no pierce shields" )
+$Icon:                                 		IconParticle
+$Anim:                                 		LoadoutParticle
+$Impact Explosion:							Shivan_Impact01
+$Impact Explosion Radius:					2.4
+
+$Name:                          			@Meson#Turret
+$Model File:                  				none
+@Laser Bitmap:								meson
+@Laser Glow:								meson_glow
+@Laser Color:								70, 229, 7
+@Laser Color2:								0, 0, 0
+@Laser Length:								13.0	
+@Laser Head Radius:							0.9
+@Laser Tail Radius:							0.9
+$Mass:										0.2
+$Velocity:                    				765
+$Fire Wait:                   				0.4
+$Damage:                      				35
+$Armor Factor:								1.3
+$Shield Factor:								0.75
+$Subsystem Factor:							0.3
+$Lifetime:                    				1.18
+$Energy Consumed:             				2.2                     ;was 1.6
+$Cargo Size:                  				0.0
+$Homing:                      				NO
+$LaunchSnd:                   				81
+$ImpactSnd:                   				85
++Weapon Range:                				900  
+$Flags:                       				( "player allowed" "stream" "particle spew" "no pierce shields" )
+$Icon:                        				IconMeson
+$Anim:                        				LoadoutMeson
+$Impact Explosion:              			Maxim_Impact
+$Impact Explosion Radius:					3.3
+$Pspew: 
++Count: 	                                1 
++Time: 		                                17
++Vel: 		                                0.40 
++Radius: 	                                0.40 
++Life: 		                                0.2 
++Scale: 	                                0.65 
++Bitmap: 	                                Vepar_Particle
+
+$Name:                                  	@Laser#Turret
+$Model File:								none
+@Laser Bitmap:			                    Laser_Bitmap
+@Laser Glow:			                    Laser_Glow
+@Laser Color:			                    229, 31, 28
+@Laser Color2:								0, 0, 0
+@Laser Length:			                    12.0
+@Laser Head Radius: 	                    0.7
+@Laser Tail Radius: 	                    0.7
+$Mass:										0.3
+$Velocity:									900.0			
+$Fire Wait: 								0.25				
+$Damage:									18
+$Armor Factor:								1.0
+$Shield Factor: 							1.0
+$Subsystem Factor:							0.3
+$Lifetime:									1.11				
+$Energy Consumed:							0.6825                  ;was then 0.625		
+$Cargo Size:								0.0 			
+$Homing:									NO
+$LaunchSnd: 								76				
+$ImpactSnd: 								85				
++Weapon Range:								1000			
+$Flags: 									( "player allowed" "stream" "no pierce shields" )
+$Icon:										IconLaser
+$Anim:										LoadoutLaser
+
+$Name:                                  	@Tachyon#Turret
+$Model File:								none
+@Laser Bitmap:								tachyon
+@Laser Glow:								tachyon_glow
+@Laser Color:								197, 208, 229
+@Laser Color2:								0, 0, 0
+@Laser Length:								14.0
+@Laser Head Radius:							0.75
+@Laser Tail Radius:							0.65
+$Mass:                                 		0.3
+$Velocity:                             		720.0
+$Fire Wait:                            		0.35	
+$Damage:                               		70.0
+$Armor Factor:								1.0
+$Shield Factor:								0.9
+$Subsystem Factor:							0.35
+$Lifetime:                            		0.89
+$Energy Consumed:							4.0
+$Cargo Size:								0.0	
+$Homing:                               		NO
+$LaunchSnd:                            		82
+$ImpactSnd:                            		85 
++Weapon Range:								640
+$Flags:                                		( "player allowed" "no pierce shields" )
+$Icon:                       				IconTachyon
+$Anim:                        				LoadoutTachyon
+$Impact Explosion:							MS_Impact
+$Impact Explosion Radius:					1.2
 
 #End
