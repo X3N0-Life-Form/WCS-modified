@@ -1,0 +1,277 @@
+#Mission Info
+
+$Version: 0.10
+$Name:  XSTR("Capship Control test mission", -1)
+$Author: X3N0-Life-Form
+$Created: 10/04/12 at 18:49:16
+$Modified: 10/05/12 at 14:57:46
+$Notes:
+This is a FRED2_OPEN created mission.
+$End Notes:
+
+$Mission Desc:
+ XSTR("Put mission description here
+", -1)
+$end_multi_text
+
++Game Type Flags: 1
+
++Flags: 1024
+
++Disallow Support: 0
+
++Hull Repair Ceiling: 0.000000
+
++Subsystem Repair Ceiling: 100.000000
+
++Viewer pos: 0.000000, 855.812500, -341.098480
++Viewer orient:
+	0.991125, -0.000002, 0.132930,
+	-0.095917, 0.692341, 0.715168,
+	-0.092034, -0.721571, 0.686196
+
+
+$AI Profile: SAGA RETAIL
+
+#Command Briefing
+
+#Briefing
+$start_briefing
+$num_stages: 0
+$end_briefing
+
+#Debriefing_info
+
+$Num stages: 0
+
+#Players		;! 1 total
+
+$Starting Shipname: Alpha 1
+$Ship Choices: (
+	"F-86C Hellcat V"	5
+)
+
++Weaponry Pool: (
+	"Ion"	16
+	"Laser"	16
+	"Light Tachyon"	16
+	"Mass Driver"	16
+	"Meson"	16
+	"Neutron"	16
+	"Particle"	16
+	"Photon"	16
+	"Plasma"	16
+	"Reaper"	16
+	"Tachyon"	16
+	"Tachyon#Excalibur"	16
+	"Dart Dumbfire"	500
+	"Pilum FF"	500
+	"Javelin HS"	500
+	"Spiculum IR"	500
+	"Porcupine"	500
+	"Lance"	500
+)
+
+#Objects		;! 4 total
+
+$Name: Alpha 1		;! Object #0
+$Class: Tallahassee-class
+$Team: Friendly
+$Location: 0.000000, 0.000000, 0.000000
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Hull: 100
++Subsystem: Pilot
++Subsystem: turret07
++Subsystem: turret08
++Subsystem: turret09
++Subsystem: turret10
++Subsystem: turret11
++Subsystem: turret12
++Subsystem: turret13
++Subsystem: turret14
++Subsystem: turret01
++Subsystem: turret02
++Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret06
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "player-start" )
++Flags2: ( "no-subspace-drive" )
++Respawn priority: 0
++Orders Accepted: 49407		;! note that this is a bitfield!!!
++Group: 0
++Score: 10
+
+$Name: Zorg#1 1		;! Object #1
+$Class: Strakha
+$Team: Hostile
+$Location: -193.054230, -0.000455, 2379.795898
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
++AI Class: Captain
+$AI Goals: ( goals ( ai-chase "Alpha 1" 50 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" )
++Flags2: ( "no-subspace-drive" )
++Respawn priority: 0
++Group: 0
++Score: 10
+
+$Name: Zorg#1 2		;! Object #2
+$Class: Strakha
+$Team: Hostile
+$Location: 68.758171, -0.000513, 2268.989990
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
++AI Class: Captain
+$AI Goals: ( goals ( ai-chase "Alpha 1" 50 ) )
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" )
++Flags2: ( "no-subspace-drive" )
++Respawn priority: 0
++Group: 0
++Score: 10
+
+$Name: Capital Ship		;! Object #3
+$Class: Ralaxath-class
+$Team: Hostile
+$Location: -9.406257, 0.000079, 3403.505371
+$Orientation:
+	-0.990294, -0.054012, -0.128063,
+	-0.043123, 0.995332, -0.086338,
+	0.132129, -0.079977, -0.988001
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Hull: 100
++Subsystem: Pilot
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06
++Subsystem: turret07
++Subsystem: turret08
++Subsystem: turret09
++Subsystem: turret10
++Subsystem: turret11
++Subsystem: turret12
++Subsystem: turret13
++Subsystem: turret02
++Subsystem: turret03
++Subsystem: turret01
++Subsystem: turret14
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "escort" )
++Flags2: ( "no-subspace-drive" )
++Respawn priority: 0
++Escort priority: 10
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Score: 200
+
+#Wings		;! 2 total
+
+$Name: Zorg#1
+$Waves: 1
+$Wave Threshold: 0
+$Special Ship: 0		;! Zorg#1 1
+
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Ships: (		;! 2 total
+	"Zorg#1 1"
+	"Zorg#1 2"
+)
++Flags: ( )
+
+$Name: Alpha
+$Waves: 1
+$Wave Threshold: 0
+$Special Ship: 0		;! Alpha 1
+
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Ships: (		;! 1 total
+	"Alpha 1"
+)
++Hotkey: 0
++Flags: ( )
+
+#Events		;! 1 total
+
+$Formula: ( when 
+   ( is-destroyed-delay 0 "Zorg#1" ) 
+   ( do-nothing ) 
+)
++Name: Destroy Fighters
++Repeat Count: 1
++Interval: 1
++Objective:  XSTR("Destroy Fighters", -1)
++Team: 0
+
+#Goals		;! 0 total
+
+
+#Waypoints		;! 0 lists total
+
+
+#Messages		;! 0 total
+
+
+#Reinforcements		;! 0 total
+
+
+#Background bitmaps		;! 0 total
+
+$Num stars: 500
+$Ambient light level: 7895160
++Nebula: Nebula01
++Color: Blue
++Pitch: 299
++Bank: 145
++Heading: 343
+
+#Asteroid Fields
+
+#Music
+
+$Event Music: Cairo
+$Briefing Music: None
+
+#End
+
