@@ -1,0 +1,36 @@
+#Secondary Weapons
+
+$Name:                                  	@Paw
+	+nocreate ;:
+$Flags:										( "in tech database" "player allowed" )                                          
+
+$Name:                                 	    @Fang
+	+nocreate ;:
+$Flags:									    ( "in tech database" "player allowed" )                                           
+
+$Name:                                      @Stalker
+	+nocreate ;:
+$Flags:									    ( "in tech database" "player allowed" )                                          
+
+$Name:                              	    @Claw
+	+nocreate ;:
+$Flags:									    ( "in tech database" "player allowed" )                                          
+
+$Name:                                 	    @Fang Ace
+	+nocreate ;:
+$Flags:									    ( "player allowed" )
+
+$Name:                              	    @Claw Ace
+	+nocreate ;:
+$Flags:									    ( "player allowed" )                                          
+
+$Name:                                      @Scratch
+	+nocreate ;:
+$Flags:								    	( "in tech database" "Spawn Scratch Child,1" "player allowed" )                                     
+
+$Name:                          		    Spear
+	+nocreate ;:
+$Flags:                      		    	( "in tech database" "No Dumbfire" "bomb" "huge" "pierce shields" "player allowed" )
+
+
+#End

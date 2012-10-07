@@ -1,0 +1,130 @@
+#Ship Classes
+;------------------------------ Darket ----------------------------------------
+
+$Name:                          Darket
+	+nocreate ;:
+$Flags:                         ( "fighter" "in tech database" "player_ship" )
+
+;------------------------------ Darket Ace ------------------------------------
+
+$Name:                          Darket#Ace
+	+nocreate
+$Flags:                         ( "fighter" "player_ship" )
+
+;------------------------------ Ekapshi ----------------------------------------
+
+$Name:                          Ekapshi
+	+nocreate ;:
+$Flags:                         ( "fighter" "player_ship" )
+
+;------------------------------ Dralthi IV ------------------------------------
+
+$Name:                          Dralthi IV
+	+nocreate ;:
+$Flags:                         ( "fighter" "in tech database" "player_ship" )
+
+;------------------------------ Dralthi Ace ------------------------------------
+
+$Name:                          Dralthi IV#Ace
+	+nocreate ;:
+$Flags:                         ( "fighter" "player_ship" )
+
+;------------------------------ Strakha ---------------------------------------
+
+$Name:                          Strakha
+	+nocreate ;:
+$Flags:                         ( "fighter" "player_ship" )
+
+$Name:                          Strakha#Cloak
+	+nocreate ;:
+$Flags:                         ( "fighter" "player_ship" )
+
+$Name:                          Strakha#Decloak
+	+nocreate ;:
+$Flags:                         ( "fighter" "player_ship" )
+
+$Name:                          Strakha#Inv
+	+nocreate ;:
+$Flags:                         ( "fighter" "player_ship" )
+
+;------------------------------ Stalker ---------------------------------------
+
+$Name:                          Strakha#Ace
+	+nocreate ;:
+$Flags:                         ( "fighter" "player_ship" )
+
+$Name:                          Strakha#Ace Cloak
+	+nocreate ;:
+$Flags:                         ( "fighter" "player_ship" )
+
+
+$Name:                          Strakha#Ace Decloak
+	+nocreate ;:
+$Flags:                         ( "fighter" "player_ship" )
+
+$Name:                          Strakha#Ace Inv
+	+nocreate ;:
+$Flags:                         ( "fighter" "player_ship" )
+
+;------------------------------ Vaktoth ---------------------------------------
+
+$Name:                          Vaktoth
+	+nocreate ;:
+$Flags:                         ( "fighter" "in tech database" "player_ship" )
+
+;------------------------------ Deathfang ---------------------------------------
+
+$Name:                          Vaktoth#Ace
+	+nocreate ;:
+$Flags:                         ( "fighter" "player_ship" )
+
+$Name:                          Vaktoth#AceCloak
+	+nocreate ;:
+$Flags:                         ( "fighter" "player_ship" )
+
+$Name:                          Vaktoth#AceDecloak
+	+nocreate ;:
+$Flags:                         ( "fighter" "player_ship" )
+
+$Name:                          Vaktoth#AceInv
+	+nocreate ;:
+$Flags:                         ( "fighter" "player_ship" )
+
+;------------------------------ K'ha'haf --------------------------------------
+
+$Name:                          Khahaf
+	+nocreate ;:
+$Flags:                         ( "fighter" "player_ship" )
+
+;------------------------------ Gothri ---------------------------------------
+
+$Name:                          Gothri
+	+nocreate ;:
+$Flags:                         ( "fighter" "player_ship" )
+
+;------------------------------ Gothri (Bomber) ---------------------------------------
+
+$Name:                          Gothri#B
+	+nocreate ;:
+$Flags:                         ( "bomber" "player_ship" )
+
+;------------------------------ Paktahn ---------------------------------------
+
+$Name:                          Paktahn
+	+nocreate ;:
+$Flags:                         ( "bomber" "in tech database" "player_ship" )
+
+;------------------------------ Paktahn Ace ---------------------------------------
+
+$Name:                          Paktahn#Ace
+	+nocreate ;:
+$Flags:                         ( "bomber" "player_ship" )
+
+;------------------------------ Sorthak ---------------------------------------
+
+$Name:                          Sorthak
+	+nocreate ;:
+$Flags:                         ( "bomber" "player_ship" )
+
+
+#End

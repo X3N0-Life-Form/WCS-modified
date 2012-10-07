@@ -1,0 +1,362 @@
+#Mission Info
+
+$Version: 0.10
+$Name:  XSTR("WCS-modified testing arena", -1)
+$Author: X3N0-Life-Form
+$Created: 10/07/12 at 14:26:46
+$Modified: 10/07/12 at 14:32:14
+$Notes:
+This is a FRED2_OPEN created mission.
+$End Notes:
+
+$Mission Desc:
+ XSTR("Put mission description here
+", -1)
+$end_multi_text
+
++Game Type Flags: 1
+
++Flags: 0
+
++Disallow Support: 0
+
++Hull Repair Ceiling: 0.000000
+
++Subsystem Repair Ceiling: 100.000000
+
++Viewer pos: 0.000000, 150.000000, -200.000000
++Viewer orient:
+	1.000000, 0.000000, -0.000000,
+	0.000000, 0.622550, 0.782580,
+	0.000000, -0.782580, 0.622550
+
+
+$AI Profile: SAGA RETAIL
+
+#Command Briefing
+
+#Briefing
+$start_briefing
+$num_stages: 0
+$end_briefing
+
+#Debriefing_info
+
+$Num stages: 0
+
+#Players		;! 1 total
+
+$Starting Shipname: Alpha 1
+$Ship Choices: (
+	"F-27B Arrow"	5
+	"F-86C Hellcat V"	5
+	"F-66A Thunderbolt VII"	5
+	"F-57B Sabre"	5
+	"F-103A Excalibur"	5
+	"F/A-76A Longbow"	5
+	"Venture-class"	5
+	"Caernaven-class"	5
+	"Southampton-class"	5
+	"Savannah-class"	5
+	"Tallahassee-class"	5
+	"Harrier-class"	5
+	"Yorktown-class"	5
+	"Jutland-class"	5
+	"Lexington-class"	5
+	"Confederation-class"	5
+	"Darket"	5
+	"Darket#Ace"	5
+	"Ekapshi"	5
+	"Dralthi IV"	5
+	"Dralthi IV#Ace"	5
+	"Strakha"	5
+	"Strakha#Ace"	5
+	"Vaktoth"	5
+	"Vaktoth#Ace"	5
+	"Khahaf"	5
+	"Gothri"	5
+	"Gothri#B"	5
+	"Paktahn"	5
+	"Paktahn#Ace"	5
+	"Sorthak"	5
+	"Kamrani-class"	5
+	"Zakhari-class"	5
+	"Ralarrad-class"	5
+	"Ralaxath-class"	5
+	"Fralath-class"	5
+	"Fralthi II-class"	5
+	"Dubav-class"	5
+	"Bhantkara-class"	5
+	"Hvar'kann-class"	5
+)
+
++Weaponry Pool: (
+	"Ion"	16
+	"Laser"	16
+	"Light Tachyon"	16
+	"Mass Driver"	16
+	"Meson"	16
+	"Neutron"	16
+	"Particle"	16
+	"Photon"	16
+	"Plasma"	19
+	"Reaper"	16
+	"Tachyon"	16
+	"Tachyon#Quad"	16
+	"Meson#Quad"	16
+	"Reaper#Quad"	19
+	"Laser#Quad"	16
+	"Plasma#Quad"	16
+	"Mass Driver#Turret"	16
+	"Neutron#Turret"	16
+	"Particle#Turret"	16
+	"Meson#Turret"	16
+	"Laser#Turret"	16
+	"Tachyon#Turret"	16
+	"Dart Dumbfire"	500
+	"Pilum FF"	500
+	"Javelin HS"	500
+	"Spiculum IR"	500
+	"Porcupine"	500
+	"Lance"	500
+	"Paw"	500
+	"Fang"	500
+	"Stalker"	512
+	"Claw"	512
+	"Fang Ace"	500
+	"Claw Ace"	500
+	"Scratch"	500
+	"Spear"	509
+)
+
+#Objects		;! 6 total
+
+$Name: Alpha 1		;! Object #0
+$Class: Sorthak
+$Team: Friendly
+$Location: 0.000000, 0.000000, 0.000000
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Hull: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
++Subsystem: turret03
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "player-start" )
++Flags2: ( "no-subspace-drive" )
++Respawn priority: 0
++Group: 0
++Score: 10
+
+$Name: Alpha 2		;! Object #1
+$Class: Sorthak
+$Team: Friendly
+$Location: -87.825455, 0.000001, -51.327324
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
++Subsystem: turret03
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( )
++Flags2: ( "no-subspace-drive" )
++Respawn priority: 0
++Group: 0
++Use Table Score:
++Score: 16
+
+$Name: Alpha 3		;! Object #2
+$Class: Sorthak
+$Team: Friendly
+$Location: 86.072777, 0.000000, -60.744003
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
++Subsystem: turret01
++Subsystem: turret02
++Subsystem: turret03
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( )
++Flags2: ( "no-subspace-drive" )
++Respawn priority: 0
++Group: 0
++Use Table Score:
++Score: 16
+
+$Name: Thunderbolt#1 1		;! Object #3
+$Class: F-66A Thunderbolt VII
+$Team: Hostile
+$Location: -34.608356, -0.000006, 572.411499
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
++Subsystem: turret01
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" )
++Flags2: ( "no-subspace-drive" )
++Respawn priority: 0
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: Thunderbolt#1 2		;! Object #4
+$Class: F-66A Thunderbolt VII
+$Team: Hostile
+$Location: 62.802555, 0.000004, 614.792908
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
++Subsystem: turret01
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" )
++Flags2: ( "no-subspace-drive" )
++Respawn priority: 0
++Group: 0
++Use Table Score:
++Score: 12
+
+$Name: Thunderbolt#1 3		;! Object #5
+$Class: F-66A Thunderbolt VII
+$Team: Hostile
+$Location: -1.505466, 0.000004, 710.194153
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
++Subsystem: turret01
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" )
++Flags2: ( "no-subspace-drive" )
++Respawn priority: 0
++Group: 0
++Use Table Score:
++Score: 12
+
+#Wings		;! 2 total
+
+$Name: Alpha
+$Waves: 1
+$Wave Threshold: 0
+$Special Ship: 0		;! Alpha 1
+
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Ships: (		;! 3 total
+	"Alpha 1"
+	"Alpha 2"
+	"Alpha 3"
+)
++Hotkey: 0
++Flags: ( )
+
+$Name: Thunderbolt#1
+$Waves: 1
+$Wave Threshold: 0
+$Special Ship: 0		;! Thunderbolt#1 1
+
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Ships: (		;! 3 total
+	"Thunderbolt#1 1"
+	"Thunderbolt#1 2"
+	"Thunderbolt#1 3"
+)
++Flags: ( )
+
+#Events		;! 0 total
+
+
+#Goals		;! 0 total
+
+
+#Waypoints		;! 0 lists total
+
+
+#Messages		;! 0 total
+
+
+#Reinforcements		;! 0 total
+
+
+#Background bitmaps		;! 0 total
+
+$Num stars: 500
+$Ambient light level: 7895160
++Nebula: Nebula01
++Color: Blue
++Pitch: 196
++Bank: 140
++Heading: 311
+
+#Asteroid Fields
+
+#Music
+
+$Event Music: None
+$Briefing Music: None
+
+#End
+
