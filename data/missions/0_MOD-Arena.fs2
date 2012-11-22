@@ -4,7 +4,7 @@ $Version: 0.10
 $Name:  XSTR("WCS-modified testing arena", -1)
 $Author: X3N0-Life-Form
 $Created: 10/07/12 at 14:26:46
-$Modified: 10/07/12 at 14:32:14
+$Modified: 10/11/12 at 17:18:10
 $Notes:
 This is a FRED2_OPEN created mission.
 $End Notes:
@@ -26,9 +26,9 @@ $end_multi_text
 
 +Viewer pos: 0.000000, 150.000000, -200.000000
 +Viewer orient:
-	1.000000, 0.000000, -0.000000,
-	0.000000, 0.622550, 0.782580,
-	0.000000, -0.782580, 0.622550
+	0.999013, -0.000002, -0.044410,
+	0.036678, 0.563848, 0.825064,
+	0.025039, -0.825879, 0.563292
 
 
 $AI Profile: SAGA RETAIL
@@ -99,12 +99,12 @@ $Ship Choices: (
 	"Neutron"	16
 	"Particle"	16
 	"Photon"	16
-	"Plasma"	19
+	"Plasma"	18
 	"Reaper"	16
 	"Tachyon"	16
 	"Tachyon#Quad"	16
 	"Meson#Quad"	16
-	"Reaper#Quad"	19
+	"Reaper#Quad"	18
 	"Laser#Quad"	16
 	"Plasma#Quad"	16
 	"Mass Driver#Turret"	16
@@ -121,20 +121,20 @@ $Ship Choices: (
 	"Lance"	500
 	"Paw"	500
 	"Fang"	500
-	"Stalker"	512
-	"Claw"	512
+	"Stalker"	508
+	"Claw"	508
 	"Fang Ace"	500
 	"Claw Ace"	500
 	"Scratch"	500
-	"Spear"	509
+	"Spear"	506
 )
 
-#Objects		;! 6 total
+#Objects		;! 7 total
 
 $Name: Alpha 1		;! Object #0
-$Class: Sorthak
+$Class: Kamrani-class
 $Team: Friendly
-$Location: 0.000000, 0.000000, 0.000000
+$Location: -3.669276, 0.000012, -85.379509
 $Orientation:
 	1.000000, 0.000000, 0.000000,
 	0.000000, 1.000000, 0.000000,
@@ -146,6 +146,9 @@ $Cargo 1:  XSTR("Nothing", -1)
 +Subsystem: turret01
 +Subsystem: turret02
 +Subsystem: turret03
++Subsystem: turret04
++Subsystem: turret05
++Subsystem: turret06
 $Arrival Location: Hyperspace
 $Arrival Cue: ( false ) 
 $Departure Location: Hyperspace
@@ -154,13 +157,14 @@ $Determination: 10
 +Flags: ( "cargo-known" "player-start" )
 +Flags2: ( "no-subspace-drive" )
 +Respawn priority: 0
++Orders Accepted: 49407		;! note that this is a bitfield!!!
 +Group: 0
 +Score: 10
 
 $Name: Alpha 2		;! Object #1
 $Class: Sorthak
 $Team: Friendly
-$Location: -87.825455, 0.000001, -51.327324
+$Location: -271.769653, -0.000019, 19.629927
 $Orientation:
 	1.000000, 0.000000, 0.000000,
 	0.000000, 1.000000, 0.000000,
@@ -188,7 +192,7 @@ $Determination: 10
 $Name: Alpha 3		;! Object #2
 $Class: Sorthak
 $Team: Friendly
-$Location: 86.072777, 0.000000, -60.744003
+$Location: 328.010986, -0.000000, -24.643064
 $Orientation:
 	1.000000, 0.000000, 0.000000,
 	0.000000, 1.000000, 0.000000,
@@ -213,8 +217,8 @@ $Determination: 10
 +Use Table Score:
 +Score: 16
 
-$Name: Thunderbolt#1 1		;! Object #3
-$Class: F-66A Thunderbolt VII
+$Name: Rapier#1 1		;! Object #3
+$Class: F-44G Rapier II
 $Team: Hostile
 $Location: -34.608356, -0.000006, 572.411499
 $Orientation:
@@ -223,10 +227,8 @@ $Orientation:
 	0.000000, 0.000000, 1.000000
 $AI Behavior: None
 $Cargo 1:  XSTR("Nothing", -1)
-+Initial Velocity: 33
 +Initial Hull: 100
 +Subsystem: Pilot
-+Subsystem: turret01
 $Arrival Location: Hyperspace
 $Arrival Cue: ( false ) 
 $Departure Location: Hyperspace
@@ -236,11 +238,10 @@ $Determination: 10
 +Flags2: ( "no-subspace-drive" )
 +Respawn priority: 0
 +Group: 0
-+Use Table Score:
 +Score: 12
 
-$Name: Thunderbolt#1 2		;! Object #4
-$Class: F-66A Thunderbolt VII
+$Name: Rapier#1 2		;! Object #4
+$Class: F-44G Rapier II
 $Team: Hostile
 $Location: 62.802555, 0.000004, 614.792908
 $Orientation:
@@ -249,10 +250,8 @@ $Orientation:
 	0.000000, 0.000000, 1.000000
 $AI Behavior: None
 $Cargo 1:  XSTR("Nothing", -1)
-+Initial Velocity: 33
 +Initial Hull: 100
 +Subsystem: Pilot
-+Subsystem: turret01
 $Arrival Location: Hyperspace
 $Arrival Cue: ( false ) 
 $Departure Location: Hyperspace
@@ -262,11 +261,10 @@ $Determination: 10
 +Flags2: ( "no-subspace-drive" )
 +Respawn priority: 0
 +Group: 0
-+Use Table Score:
 +Score: 12
 
-$Name: Thunderbolt#1 3		;! Object #5
-$Class: F-66A Thunderbolt VII
+$Name: Rapier#1 3		;! Object #5
+$Class: F-44G Rapier II
 $Team: Hostile
 $Location: -1.505466, 0.000004, 710.194153
 $Orientation:
@@ -275,10 +273,8 @@ $Orientation:
 	0.000000, 0.000000, 1.000000
 $AI Behavior: None
 $Cargo 1:  XSTR("Nothing", -1)
-+Initial Velocity: 33
 +Initial Hull: 100
 +Subsystem: Pilot
-+Subsystem: turret01
 $Arrival Location: Hyperspace
 $Arrival Cue: ( false ) 
 $Departure Location: Hyperspace
@@ -288,8 +284,44 @@ $Determination: 10
 +Flags2: ( "no-subspace-drive" )
 +Respawn priority: 0
 +Group: 0
-+Use Table Score:
 +Score: 12
+
+$Name: Cruiser		;! Object #6
+$Class: Savannah-class
+$Team: Hostile
+$Location: -350.078430, 0.000005, 1641.932129
+$Orientation:
+	0.417595, 0.000000, -0.908634,
+	0.000000, 1.000000, 0.000000,
+	0.908634, 0.000000, 0.417595
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Hull: 100
++Subsystem: Pilot
++Subsystem: turret07
++Subsystem: turret08
++Subsystem: turret09
++Subsystem: turret10
++Subsystem: turret11
++Subsystem: turret12
++Subsystem: turret01
++Subsystem: turret02
++Subsystem: turret03
++Subsystem: turret05
++Subsystem: turret06
++Subsystem: turret04
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "escort" )
++Flags2: ( "no-subspace-drive" )
++Respawn priority: 0
++Escort priority: 20
++Orders Accepted: 0		;! note that this is a bitfield!!!
++Group: 0
++Score: 1000
 
 #Wings		;! 2 total
 
@@ -310,19 +342,19 @@ $Ships: (		;! 3 total
 +Hotkey: 0
 +Flags: ( )
 
-$Name: Thunderbolt#1
+$Name: Rapier#1
 $Waves: 1
 $Wave Threshold: 0
-$Special Ship: 0		;! Thunderbolt#1 1
+$Special Ship: 0		;! Rapier#1 1
 
 $Arrival Location: Hyperspace
 $Arrival Cue: ( true ) 
 $Departure Location: Hyperspace
 $Departure Cue: ( false ) 
 $Ships: (		;! 3 total
-	"Thunderbolt#1 1"
-	"Thunderbolt#1 2"
-	"Thunderbolt#1 3"
+	"Rapier#1 1"
+	"Rapier#1 2"
+	"Rapier#1 3"
 )
 +Flags: ( )
 
@@ -355,7 +387,7 @@ $Ambient light level: 7895160
 
 #Music
 
-$Event Music: None
+$Event Music: Freya
 $Briefing Music: None
 
 #End

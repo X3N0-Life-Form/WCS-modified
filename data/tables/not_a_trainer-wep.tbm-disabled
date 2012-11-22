@@ -1,0 +1,76 @@
+#Primary Weapons
+;; divided energy consummed by 100
+$Name:										@Ion
+	+nocreate
+$Energy Consumed:							0.035 ; 3.5
+
+$Name:                                  	@Laser
+				+nocreate
+$Energy Consumed:							0.006825 ; 0.6825                  ;was then 0.625		
+
+$Name:                                  	@Light Tachyon
+	+nocreate
+$Energy Consumed:							0.0314 ; 3.14
+
+$Name:                          			@Mass Driver
+	+nocreate
+$Energy Consumed:             				0.012 ; 1.2
+
+$Name:                          			@Meson
+	+nocreate
+$Energy Consumed:             				0.022 ; 2.2                     ;was 1.6
+
+$Name:                          			@Neutron
+	+nocreate
+$Energy Consumed:             				0.0125 ; 1.25                    ;was 2.0
+
+$Name:                          			@Particle
+	+nocreate
+$Energy Consumed:             				0.022 ; 2.2
+
+$Name:                          			@Photon
+	+nocreate
+$Energy Consumed:             				0.032 ; 3.2 ;was 3.2
+
+$Name:                          			@Plasma
+	+nocreate
+$Energy Consumed:             				0.044 ; 4.4
+
+$Name:                                  	@Reaper
+	+nocreate
+$Energy Consumed:							0.012 ; 1.2 ;was 1.7
+
+$Name:                                  	@Tachyon
+	+nocreate
+$Energy Consumed:							0.04 ; 4.0
+
+#End
+
+#Secondary Weapons
+;; divided cargo size by 10 000
+$Name:                                  	@Dart Dumbfire
+	+nocreate											
+$Cargo Size:								0.001 ; 10.0													
+
+$Name:                                 		@Pilum FF
+	+nocreate											
+$Cargo Size:								0.001 ; 10.0	
+
+$Name:                                  	@Javelin HS
+	+nocreate											
+$Cargo Size:								0.001 ; 10.0	
+
+$Name:                                  	@Spiculum IR
+	+nocreate											
+$Cargo Size:								0.001 ; 10.0	
+
+$Name:                                  	@Porcupine
+	+nocreate											
+$Cargo Size:								0.001 ; 10.0	
+
+$Name:                          			Lance
+	+nocreate											
+$Cargo Size:                  				0.004 ; 40.0
+
+
+#End
