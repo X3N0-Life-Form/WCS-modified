@@ -1,0 +1,35 @@
+#Primary Weapons
+
+$Name:                          			Gattling Turret
+$Model File:								none
+@Laser Bitmap:			                    Laser_Bitmap
+@Laser Glow:			                    Laser_Glow
+@Laser Color:			                    229, 31, 28
+@Laser Color2:			                    0, 0, 0
+@Laser Length:			                    26.0
+@Laser Head Radius: 	                    1.8
+@Laser Tail Radius: 	                    1.8
+$Mass:										0.01
+$Velocity:                    				800.0
+$Fire Wait:                   				1.80
+$Damage:                      				25.0
+$Armor Factor:                				1.0
+$Shield Factor:               				1.3
+$Subsystem Factor:            				0.6
+$Lifetime:                    				2.8
+$Energy Consumed:             				0.30
+$Cargo Size:                  				0.0
+$Homing:                      				NO
+$LaunchSnd:                   				110
+$ImpactSnd:                   				85
++Weapon Range:                				2400
+$Flags:                       				( "no pierce shields" )
+$Impact Explosion:              			expmissilehit1
+$Impact Explosion Radius:       			0.1
+$FOF:                                       0.2
+$Burst Shots:						10
+$Burst Delay: 						100
+$Burst Flags: 						( "fast firing" )
+
+
+#End
